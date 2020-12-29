@@ -9,10 +9,6 @@
 
 
 
-
-
-
-
 <!-------------------------- EX N°2. Display greeting message depending on the current time----------------------------->
 <?php 
 // Starting off by displaying current time
@@ -64,7 +60,6 @@ elseif ($heure == 21 || $minutes > 1  && $heure == 4 || $minutes == 59) {
 
 <?php
 if (isset($_GET['age'])){
-    // Form processing
     if($_GET['age'] == 12){
         echo "Hello kiddo"; 
     }elseif ($_GET['age'] >=12 && $_GET['age'] < 18) {
@@ -100,8 +95,8 @@ if (isset($_GET['age'])){
     if(isset($_GET['soccers']) && isset($_GET['ageplayer'])){
      
 
-    $accepPlayer = ($_GET['ageplayer'] > 21 && $_GET['ageplayer'] < 40 && $_GET['gender'] == "female" ?  "Welcome to the team!" :  "Sorry, you don't fit the criteria"); 
-        echo "$accepPlayer"; 
+    $acceptPlayer = ($_GET['ageplayer'] > 21 && $_GET['ageplayer'] < 40 && $_GET['gender'] == "female" ?  "Welcome to the team!" :  "Sorry, you don't fit the criteria"); 
+        echo "$acceptPlayer"; 
 }
 ?>
 
