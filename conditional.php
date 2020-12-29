@@ -127,8 +127,6 @@ if (isset($_GET['age'])){
             echo  "Bravo, bravissimo!"; 
         }elseif ($_GET['grade'] > 18 && $_GET['grade'] <= 20) {
             echo  "Too good to be true : confront the cheater!";
-        }else {
-            echo  "Votre cote doivent être coté entre 0 et 20"; 
         }
     }
 ?>
